@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="flex flex-col gap-7 justify-center items-center w-[1920px] m-auto">
+        <div className="flex flex-col gap-7 justify-center items-center w-[1400px] m-auto">
           <Header />
           {children}
           <Footer />
