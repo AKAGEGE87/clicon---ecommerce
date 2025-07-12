@@ -1,5 +1,11 @@
+import About from "@/pages/About";
 import React from "react";
 
 export default function page() {
-  return <div>About Page</div>;
+  return (
+    <div>
+      About Page
+      <About />
+    </div>
+  );
 }

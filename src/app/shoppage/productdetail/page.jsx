@@ -1,5 +1,11 @@
+import ShopPageBack from "@/components/ShopPageBack";
 import React from "react";
 
 export default function page() {
-  return <div>Product Detail</div>;
+  return (
+    <div>
+      Product Detail
+      <ShopPageBack />
+    </div>
+  );
 }
