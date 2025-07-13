@@ -4,7 +4,7 @@ import React from "react";
 export default function Shoppage() {
   return (
     <div>
-      <div className="flex gap-4 text-green-600">
+      <div className="flex gap-4 text-green-600 p-[25px] bg-blue-800">
         <Link href={"../shoppage/compare"}>Compare</Link>
         <Link href={"../shoppage/productdetail"}>Product details</Link>
         <Link href={"../shoppage/shoppingcart"}>Shopping Cart</Link>
