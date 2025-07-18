@@ -13,15 +13,22 @@ export default function Shoppage() {
         <Link href={"../shoppage/trackorder"}>Trackorder</Link>
         <Link href={"../shoppage/wishlist"}>Wishlist</Link>
       </div>
-      <div>
+      <div className="grid grid-cols-3 gap-[105px]  ">
         {" "}
         {products.map((i, index) => (
-          <div key={index}>
+          <div
+            key={index}
+            className="flex flex-col items-center justify-center text-center text-[22px] font-bold text-[#321654]"
+          >
             <Link href={`/shoppage/${i.id}`}>{i.title}</Link>
+            <img
+              src="/images/macbook1.jpg"
+              alt="image macbook"
+              className="w-[420px]"
+            />
           </div>
         ))}
       </div>
-      Shoppage
     </div>
   );
 }
