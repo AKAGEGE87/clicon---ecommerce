@@ -1,21 +1,24 @@
+"use client";
 import React from "react";
 import Link from "next/link";
+import Header1 from "./HeaderComponents/Header1";
+import Header2 from "./HeaderComponents/Header2";
+
+import useLanguageStore from "@/store/languageStore";
 
 export default function Header() {
+  const { lang } = useLanguageStore();
   return (
-    <div className="bg-[#1B6392] w-[100%] py-[16px] px-[300px] text-center flex gap-4 text-[#13a01a] font-bold">
-      <Link href={"../"}>საწყისი გვერდი</Link>
-      <Link href={"../shoppage"}>Shop Page</Link>
-      <Link href={"../blog"}>Blog</Link>
-      <Link href={"../dashboard"}>Dashboard</Link>
-      <Link href={"../wishlist"}>Wishlist</Link>
-      <Link href={"../signin"}>Sign-in</Link>
-      <Link href={"../signup"}>Sign-up</Link>
-      <Link href={"../shoppingcart"}>Shopping cart</Link>
-      <Link href={"../chekout"}>Chek Out</Link>
-      <Link href={"../faqs"}>Faq's</Link>
-      <Link href={"../support"}>Support</Link>
-      <Link href={"../about"}>About</Link>
+    <div className="w-[1920px]">
+      <Header1 />
+      <Header2 />
+      <div className="bg-[#1B6392] w-[100%] py-[16px] px-[30px] text-center flex gap-4 text-[#13a01a] font-bold">
+        {lang.mineMenu.map((i, index) => (
+          <Link href={i.link} key={index} className="text-[20px]">
+            {i.name}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

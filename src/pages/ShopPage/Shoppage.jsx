@@ -6,7 +6,7 @@ import products from "@/libs/products_30.json";
 export default function Shoppage() {
   return (
     <div>
-      <div className="flex gap-4 text-green-600 p-[25px] bg-blue-800">
+      <div className="flex gap-4 text-green-600 p-[25px] bg-blue-800 justify-center w-full">
         <Link href={"../shoppage/compare"}>Compare</Link>
         <Link href={"../shoppage/productdetail"}>Product details</Link>
         <Link href={"../shoppage/shoppingcart"}>Shopping Cart</Link>

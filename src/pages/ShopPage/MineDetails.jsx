@@ -3,6 +3,7 @@ import React from "react";
 import { useParams } from "next/navigation";
 import products from "@/libs/products_30.json";
 import "./detail.css";
+import Image from "next/image";
 
 export default function MineDetails() {
   const save = useParams();
@@ -42,9 +43,20 @@ export default function MineDetails() {
           <p>
             Category: <span> {product.category}</span>
           </p>
-          <p>
-            Images: <span>{product.images}</span>
-          </p>
+          <div className="text-blue-700 text-[25px]">
+            Images:{" "}
+            <div className="flex gap-3">
+              {product.images.map((item, index) => (
+                <Image
+                  src={item}
+                  alt=""
+                  width={1000}
+                  height={1000}
+                  className={`w-[200px] ${index % 2 === 1 && "h-[300px] "}`}
+                />
+              ))}
+            </div>
+          </div>
           <p>
             Description: <span> {product.description}</span>
           </p>

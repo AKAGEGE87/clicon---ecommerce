@@ -1,0 +1,52 @@
+{
+  "mineMenu": [
+    {
+      "name": "მთავარი",
+      "link": "/"
+    },
+    {
+      "name": "მაღაზიის გვერდი",
+      "link": "/shoppage"
+    },
+    {
+      "name": "ბლოგი",
+      "link": "/blog"
+    },
+    {
+      "name": "დაშბორდი",
+      "link": "/dashboard"
+    },
+    {
+      "name": "სურვილების სია",
+      "link": "/wishlist"
+    },
+    {
+      "name": "შესვლა",
+      "link": "/signin"
+    },
+    {
+      "name": "რეგისტრაცია",
+      "link": "/signup"
+    },
+    {
+      "name": "საყიდლების კალათა",
+      "link": "/shoppingcart"
+    },
+    {
+      "name": "გადახდა",
+      "link": "/chekout"
+    },
+    {
+      "name": "ხშირად დასმული კითხვები",
+      "link": "/faqs"
+    },
+    {
+      "name": "მხარდაჭერა",
+      "link": "/support"
+    },
+    {
+      "name": "ჩვენ შესახებ",
+      "link": "/about"
+    }
+  ]
+}
